@@ -76,3 +76,26 @@ function  refreshDataFromBuku() {
         }
     }
 }
+
+function searchBuku() {
+    const cari = document.getElementById("cari").value;
+    let filter = cari.toUpperCase();
+    
+    const container = document.querySelectorAll(".container");
+
+    for (var i=0;i < container.length; i++) {
+        let textContainer = container[i].getElementsByClassName("textContainer");
+        for(var j=0;j < textContainer.length;j++) {
+            h2 = textContainer[j].querySelectorAll("h2")[0];
+            text = h2.innerText;
+            
+            if (text.toUpperCase().indexOf(filter) > -1) {
+                container[i].style.display = "";
+            } else {
+                container[i].style.display = "none";
+            }
+        }
+      
+    }   
+    
+}

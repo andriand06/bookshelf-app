@@ -40,9 +40,9 @@
     </section>
     <section class="search">
         <h2>Cari Buku</h2>
-        <form action="">
+        <form action="" id="searchForm">
             <label for="cari">Judul</label>
-            <input type="text" name="cari" id="cari">
+            <input type="text" name="cari" id="cari" onkeyup="searchBuku()" required>
             <button type="submit">Cari</button>
         </form>
     </section>
