@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="assets/css/styleme.css">
+</head>
+
+<body>
+<header class="head">
+    <h1>Bookshelf App</h1>
+</header>
+<main>
+    <section class="input">
+        <h2>Masukkan Buku Baru</h2>
+        <form action="" id="inputBuku">
+            <div class="inputForm">
+                <label for="judul">Judul</label>
+                <input type="text" name="judul" id="judul" required>
+            </div>
+            <div class="inputForm">
+                <label for="penulis">Penulis</label>
+                <input type="text" name="penulis" id="penulis" required>
+            </div>  
+            <div class="inputForm">
+                <label for="tahun">Tahun</label>
+                <input type="text" name="tahun" id="tahun" required>
+            </div>
+            <div class="inputinline">
+                <label for="selesai">Selesai dibaca</label>
+                <input type="checkbox" name="selesai" id="selesai">
+            </div>
+            <div class="inputForm">
+                
+                <button type="submit" id="submitBuku">Masukkan Buku ke Rak <i>belum selesai dibaca</i></button>
+            </div>        
+        </form>
+    </section>
+    <section class="search">
+        <h2>Cari Buku</h2>
+        <form action="">
+            <label for="cari">Judul</label>
+            <input type="text" name="cari" id="cari">
+            <button type="submit">Cari</button>
+        </form>
+    </section>
+
+    <section class="rakbuku">
+        <h2>Belum selesai dibaca</h2>
+        <div class="listbuku" id="belumselesai">
+
+        </div>
+    </section>
+
+    <section class="rakbuku">
+        <h2>Selesai dibaca</h2>
+        <div class="listbuku" id="sudahselesai">
+
+        </div>
+    </section>
+</main>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/dom.js"></script>
+</body>
+</html>

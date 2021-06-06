@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body, input, button {
+    font-family: 'Franklin Gothica', 'Arial Narrow', Arial, sans-serif;
+}
+.head {
+    background-color: aqua;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.input {
+    display: flex;
+    flex-direction:column ;
+    border: 1px solid black;
+    border-radius: .3125rem ;
+    padding: 20px;
+    
+}
+
+.input > h2 {
+    text-align: center;
+    color: cadetblue;
+}
+
+.input > form  > .inputForm {
+    margin: 8px 0;
+}
+.input > form  > .inputinline {
+    color: cadetblue;
+    display: flex;
+    margin: 12px 0;
+    align-items: center;
+}
+.input >form > .inputinline > input {
+    margin: 0 5px;
+}
+ 
+.input > form >.inputForm > input {
+    display: block;
+    width: 100%;
+    border-radius: .3125rem;
+    padding: 5px;
+    margin: auto;
+   
+}
+
+.input> form > .inputForm > label {
+    color: cadetblue;
+    font-weight: bold;
+}
+.input > form > .inputForm > button {
+    background-color: cadetblue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: .3125rem;
+    align-items: center;
+    padding: 8px;
+}
+.search > h2 {
+    text-align: center;
+    color: cadetblue;
+    margin: 8px 0;
+}
+.search > form > label {
+    color: cadetblue;
+    font-weight: bold;
+    margin: 5px;
+}
+.search > form >input {
+    margin: auto;
+    border-radius: .3125rem;
+    width: 350px;
+    padding: 5px;
+}
+.search > form > button {
+    background-color: cornflowerblue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    width: 100px;
+}
+@media (max-width:800px) {
+    .search > form > input {
+        width: 150px;
+    }
+    .search > form > button {
+        width: 80px;
+    }
+}
+.rakbuku {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: .3125rem;
+    margin: 8px 0;
+  
+}
+
+.rakbuku > div {
+    margin: 5px 0;
+    padding: 16px;
+}
+.rakbuku > h2 {
+    color: cadetblue;
+}
+
+.container {
+    border: 0.5px solid black;
+    border-radius: .3125rem;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.read-button {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: .3125rem;
+    background-color: cornflowerblue;
+    margin-left: auto;
+}
+
+.delete-button {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: .3125rem;
+    background-color: red;
+    margin-left: auto;
+}
+.unread-button {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: .3125rem;
+    background-color: chartreuse;
+}
+
